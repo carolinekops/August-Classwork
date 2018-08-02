@@ -1,5 +1,7 @@
+import java.util.Scanner;
 
 public class Employee {
+	private int time;
 	private String name;
 	private int employeeId;
 	double salary;
@@ -18,6 +20,14 @@ public class Employee {
 		this.joinDate= joinDate;
 		this.typeOfEmployee = typeOfEmployee;
 		this.hours = hours;
+	}
+	
+	void setSalary(double newSalary) {
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Enter your HR code to set salary");
+		int hrCode = keyboard.nextInt();
+		if(hrCode == 3391);
+			this.salary = newSalary;
 	}
 	
 	//Constructor for employees that do not have an ID number or hours
